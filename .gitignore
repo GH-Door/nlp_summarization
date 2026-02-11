@@ -1,6 +1,47 @@
+.DS_Store
+.env
+.env.txt
+.env.template
+.env.example
+/.venv
+__pycache__/
+*.py[cod]
+
+## data (large files)
+data/*.csv
 input/data/
 *.tar.gz
-.env
+
+## model checkpoints
 checkpoint*/
-__pycache__/
-.DS_Store
+outputs/
+prediction/
+models/
+*.zip
+
+## logs & results
+logs/
+results/
+ensemble_results/
+*.log
+
+## Hydra runtime outputs
+hydra/
+**/.hydra
+**/outputs/*
+
+## lock files
+poetry.lock
+uv.lock
+
+## ipynb
+**/.ipynb_checkpoints
+
+## pytorch lightning
+**/lightning_logs
+
+## wandb
+wandb/
+
+## OS
+Thumbs.db
